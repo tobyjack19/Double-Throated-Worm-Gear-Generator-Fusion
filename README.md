@@ -12,7 +12,7 @@ When generating the Gear, you will need to create two copies, one with a defined
 Once the script has Run in fusion, a message will pop up saying:
 
 ---------------------------
-Runtime: 5.1385 seconds, worm and gear distance: 32.0000 mm, angle between teeth: 18.0000 degrees
+Runtime: 5.1385 seconds, worm and gear distance: ... mm, angle between teeth: ... degrees
 ---------------------------
 
 Make a note of the worm and gear distance (this is the distance between the centrepoint of the worm gear, and the centrepoint of the arc / spur gear) and angle between teeth, these will be necessary using the methodology set out in the video.
