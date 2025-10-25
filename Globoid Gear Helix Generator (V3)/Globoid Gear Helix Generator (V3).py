@@ -51,7 +51,7 @@ def run(_context: str):
 
         # --- GENERATE CURVE FUNCTIONS ---
 
-        CurveFunctions, WormAndGearDistance = generate_worm_spiral_func(module, arc_angle, teeth_beta, ref_radius, falloff_rate, True)
+        CurveFunctions, WormAndGearDistance, AngleBetweenTeeth = generate_worm_spiral_func(module, arc_angle, teeth_beta, ref_radius, falloff_rate, True)
 
         for i in range(num_curves):
             x_func_in, y_func_in, z_func_in = CurveFunctions[i]
@@ -172,7 +172,7 @@ def run(_context: str):
         stitch = stitches.add(stitchInput)
 
         end_time = time.time()
-        ui.messageBox(f"Runtime: {end_time - start_time:.4f} seconds, worm and gear distance: {(WormAndGearDistance*10):.4f} mm")
+        ui.messageBox(f"Runtime: {end_time - start_time:.4f} seconds, worm and gear distance: {(WormAndGearDistance*10):.4f} mm, angle between teeth: {(AngleBetweenTeeth):.4f} degrees")
 
     except:  #pylint:disable=bare-except
         # Write the error message to the TEXT COMMANDS window.
@@ -214,6 +214,7 @@ def generate_worm_spiral_func(module, arc_angle, teeth_beta, ref_radius, falloff
     # Constants
     nTeeth = int(total_teeth)
     distance = ref_radius + (module * nTeeth) / 2
+    teeth_angle = 360 / total_teeth  # angle per tooth
     nAlpha = math.radians(20)  # fixed pressure angle
     
     # Tooth dimensions
@@ -268,7 +269,7 @@ def generate_worm_spiral_func(module, arc_angle, teeth_beta, ref_radius, falloff
         make_functions(r + 1.25*module, +fDelta2, 0, 0)
     ]
     
-    return spirals, distance
+    return spirals, distance, teeth_angle
 
 # Example usage
 """ if __name__ == "__main__":
