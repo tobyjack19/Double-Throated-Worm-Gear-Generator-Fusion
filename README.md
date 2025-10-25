@@ -1,5 +1,5 @@
 # Double Throated Worm Gear Generator Fusion
-Double Throated/Enveloping Worm Gear Drive Parametric Generator for Autodesk Fusion.
+Double Throated/Enveloping/Globoid Worm Gear Drive Parametric Generator for Autodesk Fusion.
 
 This Fusion script will generate the tooth pattern for a double throated / globoid worm gear using the parametric equation set and methodology defined in  https://www.otvinta.com/globoid.html. The parameters for the gear can be edited within the script.
 
