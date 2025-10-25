@@ -7,7 +7,17 @@ This script does not include generation of the internal body of the worm gear, o
 
 # Worth noting
 
-# When generating the Gear, you will need to create two copies, one with a defined falloff value (>1), which will be the one used in practice, as the teeth taper off at each end, and another with a falloff value of 0, this will be the one used as reference geometry to create the spur gears, when following the steps laid out in the video (via the URL) above.
+When generating the Gear, you will need to create two copies, one with a defined falloff value (>1), which will be the one used in practice, as the teeth taper off at each end, and another with a falloff value of 0, this will be the one used as reference geometry to create the spur gears, when following the steps laid out in the video (via the URL) above.
+
+Once the script has Run in fusion, a message will pop up saying:
+
+---------------------------
+Runtime: 5.1385 seconds, worm and gear distance: 32.0000 mm, angle between teeth: 18.0000 degrees
+---------------------------
+
+Make a note of the worm and gear distance (this is the distance between the centrepoint of the worm gear, and the centrepoint of the arc / spur gear) and angle between teeth, these will be necessary using the methodology set out in the video.
+
+# Fusion Scripting
 
 The gear drive created using this process is mathematically pretty good, but the gear teeth are fairly basic. It will do the job for those looking for a compact, high(er) torque, robust worm gear setup which can be 3D printed.
 
