@@ -24,3 +24,9 @@ The gear drive created using this process is mathematically pretty good, but the
 For those without prior experience scripting in Fusion, the basics for creating and editing scripts are laid out here: https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-9701BBA7-EC0E-4016-A9C8-964AA4838954
 
 You need only copy the code from the python file in this repo into the python file created upon creating your own fusion script, then run within the Fusion UI as normal. You could also copy the folder "Globoid Gear Helix Generator (V3)" into your default Fusion script folder, this should also work (I believe).
+
+# The script will generate something like this: 
+<img width="1115" height="937" alt="Screenshot 2025-10-25 165958" src="https://github.com/user-attachments/assets/b36c3e4f-fbc2-4752-814c-225e05d84cfc" />
+
+# Which can then be turned into something like this:
+<img width="1815" height="952" alt="Screenshot 2025-10-25 17adfasf" src="https://github.com/user-attachments/assets/c5d5d541-162e-498d-ab42-030ace5cc5d2" />
