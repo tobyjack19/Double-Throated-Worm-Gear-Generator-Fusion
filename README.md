@@ -32,4 +32,4 @@ You need only copy the code from the python file in this repo into the python fi
 <img width="1815" height="952" alt="Screenshot 2025-10-25 17adfasf" src="https://github.com/user-attachments/assets/c5d5d541-162e-498d-ab42-030ace5cc5d2" />
 
 # 3D Printable - but requires some multi part assembly
-<img src="[https://github.com/user-attachments/assets/85a45a6e-bdd3-49df-8e93-a5148abdb246]" />
+<img width="1815" height="952" src="[https://github.com/user-attachments/assets/85a45a6e-bdd3-49df-8e93-a5148abdb246]" />
